@@ -1,0 +1,25 @@
+<div class="container" style="margin-top: 200px;">
+	<div>
+		<div class="row d-flex justify-content-center" *ngIf="startPageData.showMessage">
+	  		<h3 class="font-weight-bold">{{startPageData.message | titlecase}}</h3>
+		</div>
+		<div class="row d-flex justify-content-center" *ngIf="startPageData.showCredits">
+			<pre class="font-weight-bold h6">{{startPageData.creditsText | titlecase}} : </pre>
+	  		<div *ngFor="let credit of startPageData.credits; let isLast=last">
+	  			<pre class="h6">{{credit}}{{isLast ? '' : ', '}}</pre>
+	  		</div>
+		</div>
+		<div class="row d-flex justify-content-center" *ngIf="startPageData.showlicenseTerms">
+			<pre class="font-weight-bold h6">{{startPageData.licenseTermsText | titlecase}} : </pre>
+			<pre class="h6">{{startPageData.licenseTerms}}</pre>
+		</div>
+		<div class="row d-flex justify-content-center" *ngIf="startPageData.showCopyRight">
+			<pre class="font-weight-bold h6">{{startPageData.copyrightText | titlecase}} : </pre>
+			<pre class="h6">{{startPageData.copyright}}</pre>
+		</div>
+		<div class="row d-flex justify-content-center" *ngIf="startPageData.showSiteImage">
+			<pre class="font-weight-bold h6">Powered By : </pre>
+			<img src="{{startPageData.siteImage}}">
+		</div>
+	</div>
+</div>

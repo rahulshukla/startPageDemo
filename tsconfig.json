@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "start-page-v2": [
+        "dist/start-page-v2"
+      ],
+      "start-page-v2/*": [
+        "dist/start-page-v2/*"
+      ]
+    }
   }
 }
