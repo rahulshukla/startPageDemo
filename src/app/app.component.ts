@@ -14,19 +14,20 @@ export class AppComponent implements OnInit {
       message: 'thermodynamics',
       showMessage: true,
       credits: ['HC Verma','RS Aggarwal'],
-      creditsText: 'credits',
+      creditsLabel: 'credits',
       showCredits: true,
-      siteImage: 'https://diksha.gov.in/assets/imgs/logos.svg',
-      showSiteImage: true,
+      poweredByLabel: 'powered by',
+      poweredByImageURL: 'https://diksha.gov.in/assets/imgs/logos.svg',
+      showPoweredBy: true,
       licenseTerms: 'CC BY 4.0',
-      license: 'license',
-      licenseTermsText: 'license Terms',
+      licenseTermsLabel: 'license Terms',
       showlicenseTerms: true,
       copyright: 'CBSE, 2020',
-      copyrightText: 'copyright',
+      copyrightLabel: 'copyright',
       showCopyRight: true,
-      startButtonText : 'start',
-      showStartButton : true
     }
   }
+  public startPageEventHandler(valueEmitted) {
+      console.log(valueEmitted);
+    }
 }
