@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
+
   public startPageDetails: object;
 
   ngOnInit() {
     this.startPageDetails = {
       message: 'thermodynamics',
       showMessage: true,
-      credits: ['HC Verma','RS Aggarwal'],
+      credits: ['HC Verma', 'RS Aggarwal'],
       creditsLabel: 'credits',
       showCredits: true,
       poweredByLabel: 'powered by',
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
       copyright: 'CBSE, 2020',
       copyrightLabel: 'copyright',
       showCopyRight: true,
-    }
+    };
   }
   public startPageEventHandler(valueEmitted) {
       console.log(valueEmitted);

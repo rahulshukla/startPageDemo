@@ -1,4 +1,4 @@
-import { Component, OnInit, Input ,EventEmitter, Output} from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output, OnDestroy} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StartPageComponentInput, startEventType } from './startPageEvent';
 @Component({
@@ -6,7 +6,7 @@ import { StartPageComponentInput, startEventType } from './startPageEvent';
   templateUrl: './start-page.component.html',
   styleUrls: ['./start-page.component.css']
 })
-export class StartPageComponent implements OnInit {
+export class StartPageComponent implements OnInit, OnDestroy {
 
   @Input() startPageData: StartPageComponentInput;
   @Output() startEvents: EventEmitter<startEventType> = new EventEmitter<startEventType>();
